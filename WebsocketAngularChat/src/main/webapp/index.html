@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="webapp">
+<head>
+<!-- <meta charset="ISO-8859-1"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=100" />
+<title>index</title>
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<!-- below script is to enable routing for angular -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="mycss/mycss.css">
+<!-- <link rel="stylesheet" href="css/main.css"> -->
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="myjs/sockjs.min.js"></script>
+<script src="myjs/stomp.min.js"></script>
+<script src="myjs/websocket.js"></script>
+<script src="myjs/app.js"></script>
+<script src="myjs/websocketService.js"></script>
+
+</head>
+<body ng-controller="web_controller">
+	<div ng-view></div>
+	<div ng-include="myview/header.html"></div>
+</body>
+</html>
